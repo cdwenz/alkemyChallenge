@@ -18,7 +18,7 @@ export default function Login() {
             setError("");
             setLoading(true);
             const log = await login(emailRef.current.value, passwordRef.current.value);
-            console.log("Login success", log);
+            console.log("Login success", log.user._delegate.accessToken);
             history("/");
         }catch{
             setError("Error al iniciar sesión");
