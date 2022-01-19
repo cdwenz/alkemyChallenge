@@ -23,5 +23,7 @@ module.exports = (sequelize) => {
             type: Datatypes.DATE,
             allowNull: false,
         }
+    },{
+        timestamps: false
     });
 }
